@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-ro="Peruci la comandă pentru film, teatru și TV | Wigmaking Studio București" data-en="Custom Wigs for Film, Theatre and TV | Wigmaking Studio Bucharest">Peruci la comandă pentru film, teatru și TV | Wigmaking Studio București</title>
+  <meta name="description" data-ro="Peruci la comandă, bărbi, mustăți și piese de perucărie din păr natural pentru film, teatru, TV și evenimente în București." data-en="Custom wigs, beards, moustaches and natural-hair pieces for film, theatre, TV and events in Bucharest." content="Peruci la comandă, bărbi, mustăți și piese de perucărie din păr natural pentru film, teatru, TV și evenimente în București.">
+  <meta name="keywords" content="peruci la comandă, peruci film, peruci teatru, păr natural, bărbi și mustăți, perucierie București, custom wigs Bucharest">
+  <meta property="og:title" content="Peruci la comandă pentru film, teatru și TV | Wigmaking Studio București">
+  <meta property="og:description" content="Peruci și piese de perucărie realizate manual din păr natural pentru producții și personaje.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Manrope:wght@500&display=swap');
+    :root{
+      --cream:#f4efe7;
+      --ink:#25231f;
+      --taupe:#b0a79b;
+      --sage:#7C8872;
+      --frame:#f0c928;
+      --page-padding:4vw;
+      --header-height:84px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    html,body{margin:0;min-height:100%;background:var(--cream);color:var(--ink)}
+    body{font-family:'DM Sans',Arial,sans-serif}
+    .site-header{height:var(--header-height);position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 var(--page-padding);background:var(--taupe);border-bottom:1px solid var(--ink)}
+    .brand{display:flex;align-items:center;gap:14px;font-weight:500}
+    .brand img{display:block;width:54px;height:54px;object-fit:contain}
+    .brand-copy{display:flex;flex-direction:column;justify-content:center;line-height:1}
+    .brand-top{font-family:'Manrope',sans-serif;font-size:13px;letter-spacing:.22em;font-weight:500;margin-bottom:5px}
+    .brand-bottom{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:700;letter-spacing:.01em;color:#705565}
+    .brand-copy.lang-en .brand-top{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:700;letter-spacing:.01em;margin-bottom:5px;color:#705565}
+    .brand-copy.lang-en .brand-bottom{font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;letter-spacing:.22em;color:inherit}
+    .main-nav{display:flex;align-items:center;gap:clamp(24px,3vw,56px);font-family:'Manrope',sans-serif;font-size:16px;font-weight:500;line-height:1}
+    .main-nav a{color:inherit;text-decoration:none;font-family:'Manrope',sans-serif;font-weight:500}
+    .lang-switch{display:flex;gap:8px;align-items:center}
+    .lang-toggle{border:0;background:transparent;color:inherit;font-family:'Manrope',sans-serif;font-size:16px;font-weight:500;line-height:1;cursor:pointer;padding:6px 9px}
+    .lang-toggle.active{background:var(--sage);color:var(--cream);border-radius:999px}
+    .page{height:auto;min-height:calc(100dvh - var(--header-height));padding:var(--page-padding);position:relative;overflow:visible}
+    .section-frame{position:relative;height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));min-height:0;border:1px solid var(--ink);padding:clamp(24px,3vw,48px);overflow:hidden}
+    .section-frame + .section-frame,.about-section + .section-frame{margin-top:var(--page-padding)}
+    .section-frame,.about-section{scroll-margin-top:calc(var(--header-height) + var(--page-padding))}
+    .about-section{height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));min-height:0;margin-top:var(--page-padding);padding:clamp(24px,3vw,48px);border:1px solid var(--ink);background:var(--cream);overflow:hidden}
+    .about-wireframe{height:100%;display:grid;grid-template-columns:minmax(0,.75fr) minmax(420px,1.25fr);gap:clamp(28px,4vw,60px);align-items:stretch}
+    .about-gallery-guide{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto 1fr;gap:10px;align-content:stretch;min-height:0;height:100%}
+    .about-guide-box{border:0;position:relative;display:flex;align-items:center;justify-content:center;color:var(--sage);font:500 11px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .about-guide-box img,.about-guide-box video{width:100%;height:100%;display:block;object-fit:cover;filter:sepia(.16) saturate(.82) contrast(.94) brightness(1.03)}
+    .about-gallery-guide .about-guide-box::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(214,196,168,.10);mix-blend-mode:multiply;pointer-events:none}
+    .work-wireframe{height:100%;display:grid;grid-template-rows:78px minmax(0,260px);align-content:start;gap:16px;min-height:0}
+    #lucrari{padding-top:32px}
+    .work-title-guide{border:0;display:flex;align-items:center;justify-content:flex-start;width:100%;height:78px;margin:0;min-width:0;overflow:visible;padding:0;color:var(--ink);font:600 41px/1 'Cormorant Garamond',serif;white-space:nowrap}
+    .work-title-guide{font-style:normal;text-align:center;justify-content:center}
+    .work-title-guide > span{position:static;display:block;max-width:100%;overflow:visible}
+    html[lang="ro"] .work-title-guide > span{transform:translateX(-8px)}
+    .work-title-accent{display:inline;color:var(--sage)}
+    .work-title-guide{color:var(--ink)}
+    .work-card-guides{display:grid;grid-template-columns:repeat(3,minmax(0,250px));justify-content:center;gap:clamp(16px,2.5vw,32px);width:100%;margin-inline:auto;transform:none;height:auto;min-height:0;align-self:start}
+    .work-card-item{display:grid;gap:14px;min-width:0}
+    .work-card-guide{border:0;position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:1 / 1;min-height:0;overflow:hidden;color:var(--sage);font:500 11px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .work-card-guide img{display:block;width:100%;height:100%;min-height:0;object-fit:cover;filter:sepia(.16) saturate(.82) contrast(.94) brightness(1.03)}
+    .work-card-guide::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(214,196,168,.10);mix-blend-mode:multiply;pointer-events:none}
+    .work-card-button{height:36px;display:flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:var(--sage);color:var(--cream);font:600 12px 'Manrope',sans-serif;letter-spacing:.08em;text-decoration:none;cursor:pointer}
+    .work-card-item{padding-bottom:0}
+    .gallery-section{min-height:100dvh;margin-top:var(--page-padding);padding:clamp(32px,4vw,64px);border:1px solid var(--ink);background:var(--cream)}
+    .gallery-heading{margin:0 0 42px;color:var(--ink);font:600 45px/.9 'Cormorant Garamond',serif}
+    .gallery-category{scroll-margin-top:calc(var(--header-height) + var(--page-padding));padding:28px 0 42px;border-top:1px solid rgba(34,32,29,.35)}
+    .gallery-category h3{margin:0 0 22px;color:var(--sage);font:600 28px/1 'Cormorant Garamond',serif}
+    .gallery-placeholder{min-height:180px;border:2px solid var(--frame);display:flex;align-items:center;justify-content:center;color:var(--sage);font:500 12px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .about-panorama{grid-column:1 / -1}
+    .about-gallery-guide .about-guide-box:not(.about-panorama){aspect-ratio:1 / 1}
+    .about-gallery-guide .about-panorama{aspect-ratio:auto;min-height:0}
+    .about-copy-guide{display:flex;flex-direction:column;gap:24px;height:100%;min-height:0}
+    .about-text-guide{display:block;padding:0;text-align:justify;text-justify:inter-word;text-transform:none;letter-spacing:normal;font-family:'Manrope',sans-serif;font-size:16px;font-weight:500;line-height:1.55;color:var(--ink)}
+    .about-text-guide p{margin:0 0 24px}
+    .about-text-guide p:last-child{margin-bottom:0}
+    .about-title-guide{height:auto;min-height:0;display:block;padding:0;text-align:left;text-transform:none;letter-spacing:normal;font:600 45px/.9 'Cormorant Garamond',serif;color:var(--ink);white-space:nowrap}
+    .about-title-accent{font:inherit;color:inherit}
+    html[lang="ro"] .about-title-accent,html[lang="en"] .about-title-accent{font-family:'Cormorant Garamond',serif;color:var(--sage);font-size:.82em;font-weight:600;letter-spacing:.01em;text-transform:uppercase;margin:0 .08em}
+    .about-title-line{display:inline;white-space:nowrap}
+    .about-title-line.second{margin-left:10px}
+    html[lang="ro"] .about-title-guide{margin-bottom:8px}
+    .about-work-button{width:300px;height:36px;display:flex;align-items:center;justify-content:center;margin-top:auto;padding:0;border:0;background:var(--sage);border-radius:999px;color:var(--cream);font:600 12px/1 'Manrope',sans-serif;letter-spacing:.08em;text-decoration:none}
+    .team-contact-section{height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));min-height:0;margin-top:var(--page-padding);padding:clamp(24px,3vw,48px);border:1px solid var(--ink);background:var(--cream);overflow:hidden;scroll-margin-top:calc(var(--header-height) + var(--page-padding))}
+    .team-contact-grid{height:100%;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:clamp(28px,5vw,76px);align-items:start}
+    .team-panel,.contact-panel{min-width:0;display:flex;flex-direction:column}
+    .section4-title{margin:0 0 28px;color:var(--sage);font:600 42px/.9 'Cormorant Garamond',serif;text-align:center}
+    .team-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,28px);margin-top:auto;margin-bottom:clamp(48px,6vh,72px)}
+    .team-member{text-align:center;min-width:0}
+    .team-member-photo{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;filter:sepia(.22) saturate(.64) contrast(.86) brightness(1.06);background:#ddd}
+    .team-member-name{margin:18px 0 8px;font:600 22px/1.05 'Cormorant Garamond',serif}
+    .team-member-role{color:#3f3c38;font:500 12px/1.45 'Manrope',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+    .team-member-role span{display:block}
+    .team-member-imdb{display:inline-block;margin-top:12px;color:var(--ink);font:500 11px/1 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-underline-offset:3px}
+    .contact-panel{height:auto;align-self:stretch;position:relative;border-left:0;padding-left:clamp(24px,4vw,56px);justify-content:flex-start}
+    .contact-panel::before{content:"";position:absolute;left:0;top:0;bottom:48px;width:1px;background:rgba(37,35,31,.35);z-index:1}
+    .contact-panel .section4-title{text-align:center;margin-bottom:48px}
+    .contact-list{border-top:1px solid rgba(37,35,31,.25);margin-top:auto;margin-bottom:clamp(48px,6vh,72px)}
+    .contact-row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid rgba(37,35,31,.25);font:500 14px/1.2 'Manrope',sans-serif}
+    .contact-label{font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .contact-value{text-align:right;color:inherit;text-decoration:none}
+    a.contact-value{text-underline-offset:3px}
+    @media(max-width:850px){.team-contact-section{height:auto;min-height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));overflow:visible}.team-contact-grid{grid-template-columns:1fr;gap:42px}.contact-panel{height:auto;border-left:0;padding-left:0;padding-top:32px}.contact-panel::before{display:none}.contact-panel::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(37,35,31,.35)}.team-list,.contact-list{margin:0}.section4-title{font-size:36px}}
+    .section1-wireframe{height:100%;min-height:0;display:grid;grid-template-columns:minmax(360px,1.1fr) minmax(280px,.9fr);gap:clamp(28px,5vw,76px);align-items:center}
+    .section1-wireframe .wire-content{order:1}
+    .section1-wireframe .wire-photo{order:2}
+    .wire-box{border:0;position:relative;padding:clamp(22px,3vw,42px)}
+    .wire-label{display:none;position:absolute;top:10px;left:14px;color:var(--sage);font:500 11px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .wire-photo{width:min(100%,520px);max-height:100%;aspect-ratio:1/1;justify-self:center;display:flex;align-items:center;justify-content:center;color:var(--sage);font:500 14px 'Manrope',sans-serif;letter-spacing:.08em;text-align:center;padding:0;overflow:hidden}
+    .wire-photo img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;background:var(--cream)}
+    .wire-photo .wire-label{z-index:2;background:rgba(244,239,231,.88);padding:4px 7px}
+    .photo-translation{display:block;position:absolute;z-index:3;left:0;bottom:0;padding:12px 14px 11px;min-width:182px;background:rgba(244,239,231,.98);border-left:3px solid var(--sage);color:#3f3c38;font:500 11px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .wire-content{display:flex;flex-direction:column;gap:clamp(14px,2vw,28px);min-height:0;justify-content:center}
+    .wire-title{min-height:clamp(105px,15vh,150px);display:flex;align-items:flex-start;padding:18px 0 0;font:600 45px/.9 'Cormorant Garamond',serif;color:var(--ink);white-space:nowrap;overflow:hidden}
+    .wire-title-text{display:block;width:100%;padding-right:10px;white-space:nowrap}
+    .wire-title .script-word{font-family:'Cormorant Garamond',serif;color:var(--sage);font-size:.9em;font-weight:600;letter-spacing:.01em;text-transform:uppercase;margin:0 .08em}
+    .wire-text{min-height:clamp(90px,13vh,130px);display:flex;align-items:center;padding:0;font:16px/1.55 'Manrope',sans-serif;color:var(--ink)}
+    .wire-text-copy{display:block;width:100%;text-align:justify;text-justify:inter-word}
+    .wire-text-copy p{margin:0}
+    .wire-text-meta{display:block;width:100%;margin-bottom:20px;color:var(--sage);font:700 15px/1.25 'Manrope',sans-serif;letter-spacing:.02em;text-align:justify;text-align-last:justify;white-space:nowrap}
+    .wire-button{width:230px;height:36px;display:flex;align-items:center;justify-content:center;margin-top:8px;padding:0;border:0;background:var(--sage);border-radius:999px;color:var(--cream);font:600 12px/1 'Manrope',sans-serif;letter-spacing:.08em;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+    .wire-button:hover{background:#69765f;transform:translateY(-2px)}
+    .wire-button .wire-label{display:none}
+    @media(max-width:1200px){.wire-title{font-size:clamp(32px,3.6vw,45px)}}
+    @media(max-width:1100px){.about-section{height:auto;min-height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));overflow:visible}.about-wireframe{height:auto;grid-template-columns:1fr}.about-gallery-guide{height:auto}.about-copy-guide{height:auto}.about-title-guide{white-space:normal}.about-work-button{margin-top:24px}}
+    @media(max-width:1100px){#lucrari{height:auto;min-height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));overflow:visible}.work-wireframe{height:auto}.work-title-guide{font-size:clamp(30px,4vw,41px)}.work-card-guides{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+    @media(max-width:700px){.work-card-guides{grid-template-columns:1fr;width:min(100%,360px)}.work-title-guide{height:auto;min-height:78px;white-space:normal}.work-title-guide > span{white-space:normal;text-align:center}html[lang="ro"] .work-title-guide > span{transform:none}}
+    @media(max-width:1100px){.team-contact-section{height:auto;min-height:calc(100dvh - var(--header-height) - 2 * var(--page-padding));overflow:visible}.team-contact-grid{height:auto;grid-template-columns:1fr;gap:42px}.contact-panel{height:auto;padding-left:0;padding-top:32px}.contact-panel::before{display:none}.contact-panel::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(37,35,31,.35)}.team-list,.contact-list{margin:0}}
+    @media(max-width:850px){.section1-wireframe{grid-template-columns:1fr;gap:28px}.wire-photo{width:min(100%,360px)}.wire-content{min-height:0}.wire-title{min-height:110px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><img src="assets/sigla-studioul-de-perucherie.png" alt="Sigla Studioul de Perucherie"><span class="brand-copy"><span class="brand-top" data-ro="STUDIOUL DE" data-en="WIGMAKING">STUDIOUL DE</span><span class="brand-bottom" data-ro="PERUCHERIE" data-en="STUDIO">PERUCHERIE</span></span></div>
+    <nav class="main-nav" aria-label="Navigație principală">
+      <a href="#despre-noi" data-ro="Despre noi" data-en="About Us">Despre noi</a>
+      <a href="#lucrari" data-ro="Lucrări" data-en="Work">Lucrări</a>
+      <a href="#echipa" data-ro="Echipă" data-en="Team">Echipă</a>
+      <a href="#contact" data-ro="Contact" data-en="Contact">Contact</a>
+      <span class="lang-switch" aria-label="Alege limba"><button class="lang-toggle active" data-lang="ro" type="button">RO</button><button class="lang-toggle" data-lang="en" type="button">EN</button></span>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="section-frame" aria-label="Suprafață de construcție">
+      <div class="section1-wireframe">
+        <div class="wire-box wire-photo"><img src="assets/poza-prima-sectiune.png" alt="Stilizare de păr pentru personaj cinematografic"><span class="photo-translation" data-ro="HANDMADE · BUCUREȘTI" data-en="HANDMADE · BUCHAREST">HANDMADE · BUCUREȘTI</span></div>
+        <div class="wire-content">
+          <div class="wire-box wire-title"><span class="wire-label" data-ro="TITLU DE IMPACT" data-en="IMPACT TITLE">TITLU DE IMPACT</span><span class="wire-title-text"><span data-ro="Fiecare" data-en="Every">Fiecare</span> <span class="script-word" data-ro="personaj" data-en="character">personaj</span> <span data-ro="începe aici" data-en="starts here">începe aici</span></span></div>
+          <div class="wire-box wire-text"><span class="wire-label" data-ro="TEXT DESCRIPTIV" data-en="DESCRIPTION">TEXT DESCRIPTIV</span><span class="wire-text-copy"><span class="wire-text-meta" data-ro="PERUCHERIE LA COMANDĂ • FILM • TEATRU • TV • EVENIMENTE" data-en="CUSTOM WIGS • FILM • THEATRE • TV • EVENTS">PERUCHERIE LA COMANDĂ • FILM • TEATRU • TV • EVENIMENTE</span><p data-ro="Piese de perucherie lucrate manual, din păr natural, pentru look-uri care trebuie să pară reale. Fiecare piesă prinde formă cu răbdare, precizie și atenție la povestea personajului." data-en="Handcrafted wig pieces made from natural hair, created for looks that need to feel real. Each piece takes shape with patience, precision and attention to the character’s story.">Piese de perucherie lucrate manual, din păr natural, pentru look-uri care trebuie să pară reale. Fiecare piesă prinde formă cu răbdare, precizie și atenție la povestea personajului.</p></span></div>
+          <a class="wire-box wire-button" href="#lucrari"><span class="wire-label">BUTON</span><span data-ro="DESCOPERĂ LUCRĂRILE" data-en="EXPLORE OUR WORK">DESCOPERĂ LUCRĂRILE</span></a>
+        </div>
+      </div>
+    </section>
+    <section id="despre-noi" class="about-section" aria-label="Despre noi">
+      <div class="about-wireframe">
+        <div class="about-gallery-guide">
+          <div class="about-guide-box"><img src="assets/about-par.jpeg" alt="Păr natural"></div><div class="about-guide-box"><video src="assets/about-implantare.mp4" autoplay muted loop playsinline></video></div><div class="about-guide-box"><img src="assets/about-tul.jpeg" alt="Material pentru perucă"></div>
+          <div class="about-guide-box"><video src="assets/about-cusut-montura.mp4" autoplay muted loop playsinline></video></div><div class="about-guide-box"><img src="assets/about-montura.jpeg" alt="Montură de perucă"></div><div class="about-guide-box"><img src="assets/about-linie-implant-2.jpeg" alt="Linie de implantare"></div>
+          <div class="about-guide-box about-panorama"><img src="assets/about-linie-implant-3.jpeg" alt="Linie de implantare panoramică"></div>
+        </div>
+        <div class="about-copy-guide">
+          <div class="about-guide-box about-title-guide"><span class="about-title-line first"><span data-ro="Acolo" data-en="Where">Acolo</span> <span data-ro="unde" data-en="">unde</span> <span class="about-title-accent" data-ro="părul" data-en="Hair">părul</span></span><span class="about-title-line second"> <span data-ro="devine" data-en="becomes">devine</span> <span data-ro="" data-en="a"> </span> <span class="about-title-accent" data-ro="poveste" data-en="Story">poveste</span></span></div>
+          <div class="about-guide-box about-text-guide"><p data-ro="Suntem o echipă cu vastă experiență în realizarea pieselor de perucherie la comandă, pentru producții cinematografice și nu numai. Lucrăm cu păr 100% natural, implantat fir cu fir, pe tul fin, extrafin și HD, pentru rezultate cât mai naturale și impecabile." data-en="We are a team with extensive experience in the design and creation of bespoke wigs and hairpieces for film productions and beyond. We work exclusively with 100% human hair, hand-ventilated strand by strand onto fine, extra-fine and HD lace, creating authentic, natural-looking finishes for screen.">Suntem o echipă cu vastă experiență în realizarea pieselor de perucherie la comandă, pentru producții cinematografice și nu numai. Lucrăm cu păr 100% natural, implantat fir cu fir, pe tul fin, extrafin și HD, pentru rezultate cât mai naturale și impecabile.</p><p data-ro="De la măsurători și mulaj până la construcția bazei, implantare și finisare, tratăm fiecare etapă cu atenție la detalii. Realizăm peruci, bărbi, mustăți, favoriți, tupee, creste, extensii și orice altă piesă de perucherie necesară unei producții." data-en="From measurements and moulding through foundation construction, ventilation and finishing, we approach every stage with precision and close attention to detail. We create wigs, beards, moustaches, sideburns, extensions, toupees, mohawk hairpieces and any other specialist hairpiece required for a production.">De la măsurători și mulaj până la construcția bazei, implantare și finisare, tratăm fiecare etapă cu atenție la detalii. Realizăm peruci, bărbi, mustăți, favoriți, tupee, creste, extensii și orice altă piesă de perucherie necesară unei producții.</p></div>
+          <a class="about-work-button" href="#echipa"><span data-ro="SPUNE-NE DESPRE PROIECTUL TĂU" data-en="TELL US ABOUT YOUR PROJECT">SPUNE-NE DESPRE PROIECTUL TĂU</span></a>
+        </div>
+      </div>
+    </section>
+    <section id="lucrari" class="section-frame" aria-label="Lucrări">
+      <div class="work-wireframe">
+        <div class="work-title-guide"><span><span data-ro="„Fiecare " data-en="“Every ">„Fiecare </span><span class="work-title-accent" data-ro="piesă" data-en="piece">piesă</span><span data-ro=" prinde formă atunci când " data-en=" takes shape where "> prinde formă atunci când </span><span class="work-title-accent" data-ro="tehnica" data-en="technique">tehnica</span><span data-ro=" întâlnește " data-en=" meets "> întâlnește </span><span class="work-title-accent" data-ro="povestea" data-en="story">povestea</span><span data-ro=".”" data-en=".”">.”</span></span></div>
+        <div class="work-card-guides">
+          <div class="work-card-item">
+            <div class="work-card-guide"><img src="assets/peruca-01.png" alt="Perucă realizată pentru producții" /></div>
+            <a class="work-card-button" href="galerie.html#galerie-peruci" data-ro="PERUCI" data-en="WIGS">PERUCI</a>
+          </div>
+          <div class="work-card-item">
+            <div class="work-card-guide"><img src="assets/par-facial-01.png" alt="Păr facial realizat pentru producții" /></div>
+            <a class="work-card-button" href="galerie.html#galerie-barbi" data-ro="BĂRBI ȘI MUSTĂȚI" data-en="BEARDS &amp; MOUSTACHES">BĂRBI ȘI MUSTĂȚI</a>
+          </div>
+          <div class="work-card-item">
+            <div class="work-card-guide"><img src="assets/sprancene-01.jpeg" alt="Sprâncene realizate pentru producții" /></div>
+            <a class="work-card-button" href="galerie.html#galerie-alte-piese" data-ro="ALTE PIESE" data-en="OTHER HAIRPIECES">ALTE PIESE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="echipa" class="team-contact-section" aria-label="Echipă și contact">
+      <div class="team-contact-grid">
+        <div class="team-panel">
+          <h2 class="section4-title" data-ro="Echipă" data-en="Team">Echipă</h2>
+          <div class="team-list">
+            <article class="team-member"><img class="team-member-photo" src="assets/echipa-catalin.jpeg" alt="Cătălin Ciutu"><h3 class="team-member-name">Cătălin Ciutu</h3><div class="team-member-role"><span>Hair Designer</span><span>Chief Wig Maker</span></div><a class="team-member-imdb" href="https://www.imdb.com/name/nm0163003/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_catalin%20ciutu" target="_blank" rel="noopener noreferrer">IMDb</a></article>
+            <article class="team-member"><img class="team-member-photo" src="assets/echipa-cristina.jpeg" alt="Cristina Temelie"><h3 class="team-member-name">Cristina Temelie</h3><div class="team-member-role"><span>Key Hair</span><span>Wig Specialist</span></div><a class="team-member-imdb" href="https://www.imdb.com/name/nm1974955/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">IMDb</a></article>
+            <article class="team-member"><img class="team-member-photo" src="assets/echipa-iuliana.jpeg" alt="Iuliana Temelie"><h3 class="team-member-name">Iuliana Temelie</h3><div class="team-member-role"><span>Hair Stylist</span><span>Master Wig Maker</span></div><a class="team-member-imdb" href="https://www.imdb.com/name/nm7345892/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">IMDb</a></article>
+          </div>
+        </div>
+        <div id="contact" class="contact-panel">
+          <h2 class="section4-title" data-ro="Contact" data-en="Contact">Contact</h2>
+          <div class="contact-list">
+            <div class="contact-row"><span class="contact-label">Email</span><a class="contact-value" href="mailto:filmwigs@gmail.com">filmwigs@gmail.com</a></div>
+            <div class="contact-row"><span class="contact-label">Email</span><a class="contact-value" href="mailto:studiouldeperucherie@gmail.com">studiouldeperucherie@gmail.com</a></div>
+            <div class="contact-row"><span class="contact-label">Instagram</span><a class="contact-value" href="https://www.instagram.com/filmwigs/" target="_blank" rel="noopener noreferrer">filmwigs</a></div>
+            <div class="contact-row"><span class="contact-label" data-ro="Telefon" data-en="Phone">Telefon</span><a class="contact-value" href="tel:+40784415000">+40 784 415 000</a></div>
+            <div class="contact-row"><span class="contact-label">WhatsApp</span><a class="contact-value" href="https://wa.me/40768700296" target="_blank" rel="noopener noreferrer">+40 768 700 296</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script>
+  function fitWireTitle(){
+    const box=document.querySelector('.wire-title');
+    const title=document.querySelector('.wire-title-text');
+    if(!box||!title)return;
+    const currentLang=document.documentElement.lang==='en'?'en':'ro';
+    const localized=title.querySelectorAll('[data-ro][data-en]');
+    const previous=[...localized].map(element=>element.textContent);
+    localized.forEach(element=>element.textContent=element.dataset.en);
+    title.style.fontSize='45px';
+    title.style.wordSpacing='0px';
+    let size=parseFloat(getComputedStyle(title).fontSize);
+    const available=box.clientWidth-20;
+    while(title.scrollWidth>available && size>45){
+      size-=1;
+      title.style.fontSize=`${size}px`;
+    }
+    const overflow=title.scrollWidth-available;
+    if(overflow<0){
+      const gaps=3;
+      title.style.wordSpacing=`${Math.max(0,(-overflow)/gaps)}px`;
+    }
+    localized.forEach((element,index)=>{
+      element.textContent=currentLang==='en'?element.dataset.en:previous[index];
+    });
+    if(currentLang==='ro') title.style.wordSpacing='5px';
+  }
+  fitWireTitle();
+  window.addEventListener('load',()=>setTimeout(fitWireTitle,100));
+  window.addEventListener('resize',fitWireTitle);
+  document.querySelectorAll('.lang-toggle').forEach(button=>button.addEventListener('click',()=>{
+    document.documentElement.lang=button.dataset.lang;
+    document.querySelector('.brand-copy')?.classList.toggle('lang-en',button.dataset.lang==='en');
+    document.querySelectorAll('[data-ro][data-en]').forEach(element=>element.textContent=element.dataset[button.dataset.lang]);
+    const seoTitle=document.querySelector('title');
+    const seoDescription=document.querySelector('meta[name="description"]');
+    seoTitle.textContent=seoTitle.dataset[button.dataset.lang];
+    seoDescription.content=seoDescription.dataset[button.dataset.lang];
+    document.querySelectorAll('.lang-toggle').forEach(item=>item.classList.toggle('active',item===button));
+    fitWireTitle();
+  }));
+</script>
+</body>
+</html>
