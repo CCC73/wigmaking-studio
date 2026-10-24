@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ccc73.github.io/wigmaking-studio/sitemap.xml
